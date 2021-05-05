@@ -17,6 +17,14 @@ def check(guess, who):
     return False
 
 while count > 0:
+    # 電腦猜
+    guess = r.randint(min + 1, max - 1)
+    print('(%d). 電腦猜 %d ~ %d : %d' % (count, min, max, guess))
+
+    # 判定結果
+    if check(guess, '電腦'):
+        break
+
     # 使用者猜
     guess = int(input('(%d).請輸入 %d ~ %d : ' % (count, min, max)))
     # 檢查 guess 的資料是否在 min 與 max 之間?
@@ -28,13 +36,7 @@ while count > 0:
     if check(guess, '使用者'):
         break
 
-    # 電腦猜
-    guess = r.randint(min+1, max-1)
-    print('(%d). 電腦猜 %d ~ %d : %d' % (count, min, max, guess))
 
-    # 判定結果
-    if check(guess, '電腦'):
-        break
 
     # 將 count 減去一次
     count = count - 1
