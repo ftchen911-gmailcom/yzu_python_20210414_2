@@ -11,10 +11,10 @@ print(ftoc(32))
 def operator(func, x):
     return func(x)
 
-c = 32
+c = 0
 f = operator(ctof, c)
-print('f=%.1f' % f)
+print('c=%.1f, f=%.1f' % (c, f))
 
 f = 32
 c = operator(ftoc, f)
-print('c=%.1f' % c)
+print('c=%.1f, f=%.1f' % (f, c))
