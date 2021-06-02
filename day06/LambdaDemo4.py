@@ -2,6 +2,6 @@
 # 並求出 170, 60 的 bmi 值
 
 bmiValue = lambda h, w : w / ((h/100) ** 2)
-printBmiValue = lambda value : print("%.2f" % value)
+printBmiValue = lambda value : print("bmi: %.2f" % value)
 printBmiValue(bmiValue(170, 60))
 
