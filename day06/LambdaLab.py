@@ -38,3 +38,4 @@ area_info.get(area)(sex)
 
 
 
+
