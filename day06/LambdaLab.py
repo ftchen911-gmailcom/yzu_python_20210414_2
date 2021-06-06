@@ -37,3 +37,4 @@ area_info = {
 area_info.get(area)(sex)
 
 
+
